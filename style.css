@@ -1,0 +1,14 @@
+/* CSS Kommentar */
+body {width: 75%;
+max-width: 1200px;
+margin: 1vw auto;
+background: white;
+border-radius: 10px;
+padding: 1vw;}
+html {background-image: url("gif.gif")}
+.hintergrund {background-color: #9D0000;
+padding: 1px 3px;
+color: white;}
+.meineliste {margin: 0 auto;
+width: max-content;}
+        
