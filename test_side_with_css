@@ -18,23 +18,27 @@
     <body>
         
         <!-- HTML Kommentar -->
-        <h1>Test Webpage</h1>
+        <h1 align="center">Test Webpage</h1>
         <hr>
         <p title="Test">Ein Paragraph</p>
-        <a href="https://google.de">Google</a>
-        <img src="gif.gif" alt="Hier ist ein Schönes GIF" width="400" height="200">
+        
         
         <!-- Youtube Embed-->
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B84vj38QULY?si=YgzpPhXtJvbq4R5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="youtubeembed" width="560" height="315" src="https://www.youtube-nocookie.com/embed/B84vj38QULY?si=YgzpPhXtJvbq4R5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
         <!--Kontakt Formular-->
         <form action="zielseite.php" method="post" target="_blank"><!--Post = Wichtig damit Daten nicht in Suchleiste-->
-            Vorname: <input type="text" name="vorname" autofocus="on" required="on">
-            Nachname: <input type="text" name="nachname" required="on"><br>
-            Kontakemail: <input type="email" name="email" required="on"><br>
-            Kontaktgrund: <input type="text" name="kontaktgrund" required="on" size="100" maxlength="1000"><br>
-            <input type="checkbox" name="zustimmung_kontaktaufnahme" value="true"> Darf man dich für Rückfragen Kontaktieren<br>
-            <input type="submit" value="Klick mich" style="background-color: lightgreen;">
+            <span class="label">Vorname:</span> <input type="text" name="vorname" autofocus="on" required="on">
+			<br>
+            <span class="label">Nachname:</span> <input type="text" name="nachname" required="on">
+			<br>
+            <span class="label">Kontakemail:</span> <input type="email" name="email" required="on">
+			<br>
+            <span class="label">Kontaktgrund:</span> <textarea name="kontaktgrund" required="on" rows="7" cols="50" placeholder="Geben Sie hier den Grund für Ihren Kontakt ein (bitte nicht spammen!)."></textarea>
+			<br>
+            <input type="checkbox" name="zustimmung_kontaktaufnahme" value="true"> Darf man dich für Rückfragen Kontaktieren
+			<br>
+            <input type="submit" value="Klick mich">
         </form>
         
         
@@ -68,6 +72,6 @@
                 <dd>Beschreibung</dd>
             </dl>
         <hr>
-        Impressum 
+        <span>Impressum </span>
     </body>
 </html>
