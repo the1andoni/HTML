@@ -8,8 +8,22 @@ body {
     padding: 1vw;
     }
 
+.label {
+	display: inline-block;
+	width: 30%;
+	min-width: 150px;
+	}
+
+.youtubeembed {
+	margin: 0 auto 1vw auto;
+	display: block;
+	}
+	
 html {
-    background-image: url("gif.gif")
+    background-image: url("hintergrund.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
     }
 
 .hintergrund {
@@ -29,7 +43,7 @@ input {
     padding: 1px 3px;
     }
 
-input[type=text], input[type=email], input[type=password], input[type=date], input[type=checkbox] {
+textarea, input[type=text], input[type=email], input[type=password], input[type=date], input[type=checkbox] {
     border-radius: 10px;
     background: rgb(140, 155, 140);
     }
@@ -40,4 +54,5 @@ input[type=submit] {
     color: white;
     }
 
+        
         
