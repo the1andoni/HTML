@@ -3,9 +3,10 @@ body {
     width: 75%;
     max-width: 1200px;
     margin: 1vw auto;
-    background: rgba(140, 155, 140, 0.9);
+    background: rgba(85, 85, 85, 0.9);
     border-radius: 10px;
     padding: 1vw;
+	color: #DDCCAA;
     }
 
 .label {
@@ -13,7 +14,11 @@ body {
 	width: 30%;
 	min-width: 150px;
 	}
-
+	
+.ueberschrift {
+	text-align: center;
+	
+	}
 .youtubeembed {
 	margin: 0 auto 1vw auto;
 	display: block;
@@ -25,7 +30,11 @@ html {
 	background-attachment: fixed;
 	background-size: cover;
     }
-
+	
+.text {
+	text-align:center;
+	}
+	
 .hintergrund {
     background-color: #9D0000;
     padding: 1px 3px;
@@ -36,6 +45,10 @@ html {
     margin: 0 auto;
     width: max-content;
     }
+	
+.impressum {
+	text-align:left;
+	}
 
 input {
     border: 1px solid black;
@@ -45,14 +58,18 @@ input {
 
 textarea, input[type=text], input[type=email], input[type=password], input[type=date], input[type=checkbox] {
     border-radius: 10px;
-    background: rgb(140, 155, 140);
+    background: #DDCCAA;
     }
 
+.footer {
+	text-align: center;
+	}
+	
 input[type=submit] {
     border-radius: 10px;
     background: #9D0000;
     color: white;
     }
 
-        
+          
         
