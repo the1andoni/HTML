@@ -9,6 +9,18 @@ body {
 	color: #DDCCAA;
     }
 
+a:active {
+    color:#9D0000;
+    }
+
+
+a, a:visited{
+    color: inherit;
+    }
+a:hover {
+    color: #9D0000;
+    }
+
 .label {
 	display: inline-block;
 	width: 30%;
@@ -25,7 +37,7 @@ body {
 	}
 	
 html {
-    background-image: url("background.jpg");
+    background-image: url("hintergrund.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -63,6 +75,7 @@ textarea, input[type=text], input[type=email], input[type=password], input[type=
 
 .footer {
 	text-align: center;
+    color: #DDCCAA;
 	}
 	
 input[type=submit] {
@@ -71,5 +84,4 @@ input[type=submit] {
     color: white;
     }
 
-          
         
