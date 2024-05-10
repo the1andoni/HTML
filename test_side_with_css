@@ -24,7 +24,7 @@
         
         
         <!-- Youtube Embed-->
-        <iframe class="youtubeembed" width="560" height="315" src="https://www.youtube.com/embed/wXhgALOzUSM?si=36xTt7kJcd7eu592" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="youtubeembed" width="560" height="315" src="https://www.youtube-nocookie.com/embed/B84vj38QULY?si=YgzpPhXtJvbq4R5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
         <!--Kontakt Formular-->
         <form action="zielseite.php" method="post" target="_blank"><!--Post = Wichtig damit Daten nicht in Suchleiste-->
@@ -42,7 +42,7 @@
         </form>
         <hr>
 		<div class="footer">
-			<a href="https://google.de" target="_blank">Impressum</a> <a href="javascript:alert('YOU COMPUTER DETECTED A VIRUS!! Please delete Sys32 Folder on you PC, to fix.');">Kontaktformular</a>
+			<a href="impressum.html" target="_blank">Impressum</a> <a href="javascript:alert('YOU COMPUTER DETECTED A VIRUS!! Please delete Sys32 Folder on you PC, to fix.');">Kontaktformular</a>
 		</div>
 	</body>
 </html>
