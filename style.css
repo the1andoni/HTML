@@ -48,7 +48,12 @@ h2 {font-size: 140%;}
 h3 {font-size: 130%;}
 h4 {font-size: 120%;}
 h5 {font-size: 110%;}
-	
+
+.inline-icon {
+    vertical-align: middle;
+    height: 1.6rem;
+    }
+
 .text {
 	text-align:center;
 	}
