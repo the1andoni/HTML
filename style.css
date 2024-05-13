@@ -51,7 +51,7 @@ a:hover {
     }
 
 html {
-    background-image: url("proxy-image.jpg");
+    background-image: url("background.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
