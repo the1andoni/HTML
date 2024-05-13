@@ -31,11 +31,25 @@ a:hover {
 	text-align: center;
 	
 	}
-.youtubeembed {
+.youtubeembed, .align-center {
 	margin: 0 auto 1vw auto;
 	display: block;
 	}
-	
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
 html {
     background-image: url("proxy-image.jpg");
 	background-position: center;
