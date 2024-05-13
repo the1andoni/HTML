@@ -13,7 +13,6 @@ a:active {
     color:#9D0000;
     }
 
-
 a, a:visited{
     color: inherit;
     }
@@ -37,7 +36,7 @@ a:hover {
 	}
 	
 html {
-    background-image: url("hintergrund.jpg");
+    background-image: url("proxy-image.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -84,4 +83,6 @@ input[type=submit] {
     color: white;
     }
 
-        
+#alexbild {
+    border-radius: 10px;
+    }    
