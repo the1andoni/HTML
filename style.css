@@ -41,11 +41,20 @@ html {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
+    font-size: 12pt;
     }
+h1 {font-size: 150%;}
+h2 {font-size: 140%;}
+h3 {font-size: 130%;}
+h4 {font-size: 120%;}
+h5 {font-size: 110%;}
 	
 .text {
 	text-align:center;
 	}
+
+.bold {font-weight: bold;}
+.font-l {font-size: 110%;}
 	
 .hintergrund {
     background-color: #9D0000;
