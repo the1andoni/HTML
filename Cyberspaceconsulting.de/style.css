@@ -1,0 +1,180 @@
+/* CSS Kommentar */
+body {
+    width: 75%;
+    max-width: 1200px;
+    margin: 1vw auto;
+    background: rgba(85, 85, 85, 0.9);
+    border-radius: 10px;
+    padding: 1vw;
+	color: #DDCCAA;
+    font-family: consolas,Courier;
+    }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+a:active {
+    color:#9D0000;
+    }
+
+a, a:visited{
+    color: inherit;
+    }
+a:hover {
+    color: #9D0000;
+    }
+
+.label {
+	display: inline-block;
+	width: 30%;
+	min-width: 150px;
+	}
+	
+.ueberschrift {
+	text-align: center;
+	
+	}
+.youtubeembed, .align-center {
+	margin: 0 auto 1vw auto;
+	display: block;
+	}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+html {
+    background-image: url("background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+    font-size: 12pt;
+    }
+h1 {font-size: 150%;}
+h2 {font-size: 140%;}
+h3 {font-size: 130%;}
+h4 {font-size: 120%;}
+h5 {font-size: 110%;}
+
+.inline-icon {
+    vertical-align: middle;
+    height: 1.6rem;
+    }
+
+.text {
+	text-align:center;
+    margin-left: 1%;
+    margin-right: 1%;
+	}
+
+.bold {font-weight: bold;}
+.font-l {font-size: 110%;}
+	
+.hintergrund {
+    background-color: #9D0000;
+    padding: 1px 3px;
+    color: white;
+    }
+
+.meineliste {
+    margin: 0 auto;
+    width: max-content;
+    }
+	
+.impressum {
+	text-align:left;
+	}
+
+input {
+    border: 1px solid black;
+    margin-bottom: 3px;
+    padding: 1px 3px;
+    }
+
+textarea, input[type=text], input[type=email], input[type=password], input[type=date], input[type=checkbox] {
+    border-radius: 10px;
+    background: #DDCCAA;
+    }
+
+    /*Config des des Footers*/
+.footer {
+	text-align: center;
+    color: #DDCCAA;
+	}
+	
+input[type=submit] {
+    border-radius: 10px;
+    background: #9D0000;
+    color: white;
+    }
+
+    /*Config des des Portrais*/
+#alexbild {
+    border-radius: 10px;
+    }    
+
+.flexbox-center {
+    display: flex;
+    align-items: center;
+    }
+
+/* Style the tab */
+.tab {
+    border-radius: 10px;
+    margin: 0 auto 1vw auto;
+	display: flex;
+    justify-content: center;
+  }
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: rgba(221, 204, 170, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+  }
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #9D0000;
+  }
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
+  }
+ 
+.round-border {
+    border-radius: 10px;
+    }
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-radius: 10px;
+  }    
+
+@media screen and (max-width: 650px) {
+    .flexbox-center {flex-wrap: wrap;}
+    .flexbox-center img {width: 100%;}
+    }
