@@ -10,6 +10,12 @@ body {
     font-family: consolas,Courier;
     }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
 a:active {
     color:#9D0000;
     }
@@ -103,6 +109,7 @@ textarea, input[type=text], input[type=email], input[type=password], input[type=
     background: #DDCCAA;
     }
 
+    /*Config des des Footers*/
 .footer {
 	text-align: center;
     color: #DDCCAA;
@@ -114,6 +121,7 @@ input[type=submit] {
     color: white;
     }
 
+    /*Config des des Portrais*/
 #alexbild {
     border-radius: 10px;
     }    
@@ -122,6 +130,49 @@ input[type=submit] {
     display: flex;
     align-items: center;
     }
+
+/* Style the tab */
+.tab {
+    border-radius: 10px;
+    margin: 0 auto 1vw auto;
+	display: flex;
+    justify-content: center;
+  }
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: rgba(221, 204, 170, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+  }
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #9D0000;
+  }
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
+  }
+ 
+.round-border {
+    border-radius: 10px;
+    }
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-radius: 10px;
+  }    
 
 @media screen and (max-width: 650px) {
     .flexbox-center {flex-wrap: wrap;}

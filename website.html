@@ -24,49 +24,28 @@
         <!-- HTML Kommentar -->
         <h1 class="ueberschrift">Startseite</h1>
         <hr>
-        <div class="flexbox-center">
-        <img id="alexbild" src="Alexander.jpg" width=45% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
-        <p class="text">
-            <span class="bold font-l" title="About Me">About me:</span>
-            <br><br>
-            Hallo, ich bin Alexander und 22 Jahre alt.
-            <br><br>
-            Leidenschaftlich interessiere ich mich für die IT, dort vor allem Cybersecurity.
-            <br>
-            Abseits davon bin ich auch sehr an YouTube und Gaming interessiert.
-            <br>
-            Sodass man des Öfteren auch Gaming auf meinem Channel sehen kann.
-            <br><br>
-            Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich voraussichtlich Mitte 2027 beenden werde.
-            <br><br>
-            Mein Ziel ist es, die Menschen über die Gefahren im Internet aufzuklären.
-            <br>
-            Ich hoffe, das hierdurch besser erreichen zu können.
-            <br><br>
-            <b>Liebe Grüße Alexander</b>
-        </p>    
-        
+        <div class="flexbox-center clearfix">
+            <img id="alexbild" src="Alexander.jpg" width=45% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
+            <p class="text">
+                <span class="bold font-l" title="About Me">About me:</span>
+                <br><br>
+                Hallo, ich bin Alexander und 22 Jahre alt.
+                <br><br>
+                Leidenschaftlich interessiere ich mich für die IT, dort vor vallem Cybersecruity.
+                <br>
+                Abseits davon bin ich auch sehr an Youtube und Gaming interessiert.
+                <br>
+                Sodass man des öfteren auch Gaming auf meinem Channel sehen kann.
+                <br><br>
+                Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich vorraussichtlich Mitte 2027 beenden werde.
+                <br><br>
+                Mein Ziel ist, die Menschen über die Gefahren im Internet aufzuklären.
+                <br>
+                Ich hoffe das hierdurch besser erreichen zu können.
+                <br><br>
+                <b>Liebe Grüße Alexander</b>
+            </p>    
         </div>
-        
-        
-        
-        <hr style="clear: both;">
-        <h3 class="text" title="My Community Discord"> <img src="discord_logo.png" class="inline-icon" />&nbsp;Community&nbsp;Discord&nbsp;<img src="discord_logo.png" class="inline-icon" /></h3>
-        <p class="text"> Ihr sucht interessante gespräche oder einfach Leute zum gemütlichen beisammensein finden? 
-        <br>
-        Dann seid ihr <a href="http://invite.Cyberspaceconsulting.de">HIER</a> genau richtig</p>
-        
-        <hr>
-        <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
-        <p class="text"> Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.</p>
-        
-        <hr>
-        <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /> </h3>
-        <p class="text"> Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
-        <br>
-        All meine Projekte findet ihr dort.
-        </p>
-        
         <hr>
         <h3 class="text" title="Mein neustes Video" >Hier findet ihr mein Aktuellstes Video.</h3>
         <p class="text">In diesem Video findet man die Truppe in einer ereignissreichen Runde Hunt:Showdown</p>
@@ -77,9 +56,64 @@
             </div>
         </div>
         <hr>
+
+        <h3 class="text">Find me on:</h3>
+        <div class="tab" class="round-border">
+            <button class="tablinks" onclick="openCity(event, 'Discord')">Discord</button>
+            <button class="tablinks" onclick="openCity(event, 'Instagram')">Instagram</button>
+            <button class="tablinks" onclick="openCity(event, 'Github')">GitHub</button>
+        </div>
+        <div class="align-center">
+            <div id="Discord" class="tabcontent round-border">
+                <h3 class="text" title="My Community Discord"> <img src="discord_logo.png" class="inline-icon" />&nbsp;Community&nbsp;Discord&nbsp;<img src="discord_logo.png" class="inline-icon" /></h3>
+                <p class="text"> 
+                    Ihr sucht interessante gespräche oder einfach Leute zum gemütlichen beisammensein finden? 
+                    <br>
+                    Dann seid ihr <a href="http://invite.Cyberspaceconsulting.de">HIER</a> genau richtig
+                </p>
+            </div>
+            <div id="Instagram" class="tabcontent round-border">
+                <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
+                <p class="text">
+                    Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.
+                </p>
+            </div>
+            <div id="Github" class="tabcontent round-border">
+                <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /> </h3>
+                <p class="text">
+                    Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
+                    <br>
+                    All meine Projekte findet ihr dort.
+                </p>
+            </div>
+        </div>
+        <hr>
         <div class="footer">
 			<a href="website.html" title="Startseite">Startseite</a> <a href="error.html" title="Kontakt">Kontaktformular</a> <a href="impressum.html" title="Impressum/Bildnachweis">Impressum</a>  
 		</div>
+       
+        <script>
+            function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            } 
+        </script>
 	</body>
 </html>
 
