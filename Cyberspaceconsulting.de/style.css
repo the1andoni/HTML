@@ -46,6 +46,8 @@ a:hover {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
+    border-radius: 10px;
+    overflow: hidden;
     }
 
 .video-container iframe {
@@ -140,7 +142,7 @@ input[type=submit] {
   }
   
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tab span {
     background-color: rgba(221, 204, 170, 0.5);
     border: none;
     outline: none;
@@ -148,17 +150,20 @@ input[type=submit] {
     padding: 14px 16px;
     transition: 0.3s;
     border-radius: 10px;
-
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: block;
   }
   
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab span:hover {
     background-color: #9D0000;
   }
   
 /* Create an active/current tablink class */
-.tab button.active {
+.tab span.active {
     background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
+    color: black;
   }
  
 .round-border {
