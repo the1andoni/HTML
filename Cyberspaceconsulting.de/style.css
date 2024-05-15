@@ -90,26 +90,10 @@ h5 {font-size: 110%;}
     padding: 1px 3px;
     color: white;
     }
-
-.meineliste {
-    margin: 0 auto;
-    width: max-content;
-    }
 	
 .impressum {
 	text-align:left;
 	}
-
-input {
-    border: 1px solid black;
-    margin-bottom: 3px;
-    padding: 1px 3px;
-    }
-
-textarea, input[type=text], input[type=email], input[type=password], input[type=date], input[type=checkbox] {
-    border-radius: 10px;
-    background: #DDCCAA;
-    }
 
     /*Config des des Footers*/
 .footer {
