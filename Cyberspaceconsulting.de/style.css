@@ -1,4 +1,18 @@
 /* CSS Kommentar */
+html {
+    background-image: url("background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+    font-size: 12pt;
+    }
+    
+h1 {font-size: 150%;}
+h2 {font-size: 140%;}
+h3 {font-size: 130%;}
+h4 {font-size: 120%;}
+h5 {font-size: 110%;}
+
 body {
     width: 75%;
     max-width: 1200px;
@@ -9,17 +23,17 @@ body {
 	color: #DDCCAA;
     font-family: consolas,Courier;
     }
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+    
+input[type=submit] {
+    border-radius: 10px;
+    background: #9D0000;
+    color: white;
     }
 
 a:active {
     color:#9D0000;
     }
-
+    
 a, a:visited{
     color: inherit;
     }
@@ -27,6 +41,17 @@ a:hover {
     color: #9D0000;
     }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+#alexbild {
+    border-radius: 10px;
+    }   
+
+/* Allgemeine Klassen */
 .label {
 	display: inline-block;
 	width: 30%;
@@ -58,19 +83,6 @@ a:hover {
     height: 100%;
     }
 
-html {
-    background-image: url("background.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-    font-size: 12pt;
-    }
-h1 {font-size: 150%;}
-h2 {font-size: 140%;}
-h3 {font-size: 130%;}
-h4 {font-size: 120%;}
-h5 {font-size: 110%;}
-
 .inline-icon {
     vertical-align: middle;
     height: 1.6rem;
@@ -90,7 +102,9 @@ h5 {font-size: 110%;}
     padding: 1px 3px;
     color: white;
     }
-	
+ /* Ende der Allgemeinen Tags */	
+
+ 
 .impressum {
 	text-align:left;
 	}
@@ -101,16 +115,10 @@ h5 {font-size: 110%;}
     color: #DDCCAA;
 	}
 	
-input[type=submit] {
-    border-radius: 10px;
-    background: #9D0000;
-    color: white;
-    }
+
 
     /*Config des des Portrais*/
-#alexbild {
-    border-radius: 10px;
-    }    
+ 
 
 .flexbox-center {
     display: flex;
