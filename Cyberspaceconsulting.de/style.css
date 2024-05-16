@@ -104,26 +104,25 @@ a:hover {
     }
  /* Ende der Allgemeinen Tags */	
 
- 
-.impressum {
+ /*Anfang der Speziischen Klassen*/
+ .impressum {
 	text-align:left;
 	}
 
-    /*Config des des Footers*/
 .footer {
-	text-align: center;
+    text-align: center;
     color: #DDCCAA;
-	}
-	
-
-
-    /*Config des des Portrais*/
- 
+    }
 
 .flexbox-center {
     display: flex;
     align-items: center;
     }
+
+
+
+
+ /* Ende der Spezifischen Klassen */
 
 /* Style the tab */
 .tab {
@@ -133,7 +132,6 @@ a:hover {
     justify-content: center;
   }
   
-/* Style the buttons that are used to open the tab content */
 .tab span {
     background-color: rgba(221, 204, 170, 0.5);
     border: none;
@@ -147,12 +145,10 @@ a:hover {
     display: block;
   }
   
-/* Change background color of buttons on hover */
 .tab span:hover {
     background-color: #9D0000;
   }
   
-/* Create an active/current tablink class */
 .tab span.active {
     background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
     color: black;
@@ -163,7 +159,6 @@ a:hover {
     }
 
 
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -171,6 +166,7 @@ a:hover {
     border-radius: 10px;
   }    
 
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 650px) {
     .flexbox-center {flex-wrap: wrap;}
     .flexbox-center img {width: 100%;}
