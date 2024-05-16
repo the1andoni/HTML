@@ -1,30 +1,93 @@
 /* CSS Kommentar */
-.align-center {
-	margin: 0 auto 1vw auto;
-	display: block;
-	}
-
 html {
-    background-image: url("background.jpg");
+  background-image: url("background.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-    font-size: 12pt;
-    color: rgb(255, 55, 15);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+  font-size: 12pt;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
 h1 {font-size: 150%;}
 h2 {font-size: 140%;}
 h3 {font-size: 130%;}
 h4 {font-size: 120%;}
 h5 {font-size: 110%;}
-	
-.hintergrund {
-    background-color: #9D0000;
-    padding: 1px 3px;
-    color: white;
-    }
 
+input {
+  border: 1px solid black;
+  margin-bottom: 3px;
+  padding: 1px 3px;
+  }
+
+a, a:visited {
+  color: inherit;
+  }
+
+#alexbild {
+  border-radius: 10px;
+  margin-right: 80px;
+  }
+
+/* Allgemeine Klassen */
+
+.text {
+  text-align:center;
+  margin-left: 1%;
+  margin-right: 1%;
+  }
+
+.hintergrund {
+  background-color: #9D0000;
+  padding: 1px 3px;
+  }
+
+.align-center {
+  margin: 0 auto 1vw auto;
+  display: block;
+  }
+
+.footer {
+  text-align: center;
+      
+  }
+
+.flex {display: flex;}
+
+.flex-gap {
+  gap: 10px;
+  }
+
+.flexcontent {
+  width: 100%;
+  min-width: 0;
+  }
+
+.flex-align-center {
+  align-items: center;
+  }
+
+.flex-justify-space-between {
+  justify-content: space-between;
+  }
+
+.bold {
+  font-weight: bold;
+  }
+
+.font-l {
+  font-size: 110%;
+  }
+
+.round-border {
+  border-radius: 10px;
+  }
+
+
+/* Ende allgemeine Klassen */
+
+/* Spezifische Klassen */
 .meineliste {
     margin: 0 auto;
     width: max-content;
@@ -33,46 +96,19 @@ h5 {font-size: 110%;}
 .impressum {
 	text-align:left;
 	}
-
-input {
-    border: 1px solid black;
-    margin-bottom: 3px;
-    padding: 1px 3px;
-    }
-
-/*Config des des Footers*/
-.footer {
-	text-align: center;
-    
-	}
-   
-  /*Config des des Portrais*/
-
-#alexbild {
-  border-radius: 10px;
-  margin-right: 80px;
+  
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
   }
 
-.flexcontainer {
-  display: flex;
-  gap: 10 px;
-  }
-.flexcontent {
-  width: 100%;
-  min-width: 0;
+.inline-icon {
+  vertical-align: middle;
+  height: 1.6rem;
   }
 
-.text {
-    text-align:center;
-    margin-left: 1%;
-    margin-right: 1%;
-    color: rgb(255, 55, 15);
-    }
-
-.flexbox-center {
-    display: flex;
-    align-items: center;
-    }
+/* Ende der Spezifischen Klassen */
 
 /* Style the tab */
 .tab {
@@ -82,46 +118,28 @@ input {
     justify-content: center;
   }
   
-/* Style the buttons that are used to open the tab content */
 .tab span {
-    background-color: rgba(221, 204, 170, 0.5);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    border-radius: 10px;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    display: block;
+  background-color: rgba(221, 204, 170, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
   }
  
-  
-.bold {
-  font-weight: bold;
-  }
-
-.font-l {
-  font-size: 110%;
-  }
-
-/* Change background color of buttons on hover */
 .tab span:hover {
     background-color: #9D0000;
   }
   
-/* Create an active/current tablink class */
 .tab span.active {
     background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
     color: black;
   }
  
-.round-border {
-    border-radius: 10px;
-    }
-
-
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -134,56 +152,34 @@ input {
   overflow: hidden;
   border-style:inherit;
   background-color: rgba(43, 43, 46, 0.5);
-  margin: 5px 1%;
   padding: 1%;
-  }
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
+/* End Tab Style */
 
-  .flexbox-center {
-    display: flex;
-    align-items: center;
-    }
-
-
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-
-.inline-icon {
-    vertical-align: middle;
-    height: 1.6rem;
-    }
-
-/* Style the header with a grey background and some padding */
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: rgb(248, 167, 4);
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
+/* Style the header */
+.header a {
+  float: left;
+  color: rgb(248, 167, 4);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
   }
   
-  a, a:visited {
-    color: inherit;
-  }
-
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 1rem;
   }
   
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: #ddd;
-    color: black;
+.header a:hover {
+  background-color: #ddd;
   }
   
   /* Style the active/current link*/
@@ -194,17 +190,19 @@ input {
   
   /* Float the link section to the right */
   .header-right {
-    float: right;
+    height: max-content;
+    align-self: center;
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
+    html {
+      background-position: right;
+      }
+
     .header a {
       float: none;
       display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
+      text-align: left; 
     }
   }
