@@ -194,10 +194,37 @@ a, a:visited {
     align-self: center;
   }
   
+/*Hidden Elements*/
+
+.hoverbox {
+  }
+
+.hidden {
+  height: 0;
+  width: 0;
+  transition: 1;
+  overflow: hidden;
+  font-weight: bolder;
+  color: lightgoldenrodyellow;
+  }
+
+.hoverbox:hover .hidden {
+  height: auto;
+  width: 100%;
+  }
+
+
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 980px) {
     html {
       background-position: right;
+      }
+    
+    .hidden {
+      height: auto;
+      width: auto;
+      font-weight: 100%;
+      color: white;
       }
 
     .header a {
