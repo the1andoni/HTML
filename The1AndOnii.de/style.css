@@ -201,7 +201,6 @@ a, a:visited {
 
 .hidden {
   height: 0;
-  width: 0;
   transition: 1;
   overflow: hidden;
   font-weight: bolder;
@@ -210,7 +209,6 @@ a, a:visited {
 
 .hoverbox:hover .hidden {
   height: auto;
-  width: 100%;
   }
 
 
