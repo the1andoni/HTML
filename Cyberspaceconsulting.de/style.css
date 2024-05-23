@@ -306,6 +306,11 @@ display: flex;
   .flexbox-center img {
     width: 100%;
   }
+
+  .parallax{
+    background-image: none;
+  }
+  
   html {
     background-image: url("img2.jpg");
   }
