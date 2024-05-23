@@ -307,6 +307,6 @@ display: flex;
     width: 100%;
   }
   .parallax {
-    position: fixed;
+    background-attachment: scroll;
   }
 }
