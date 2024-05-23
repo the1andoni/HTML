@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Meta Daten für Suchmaschine-->
-        <meta charset="utf-16">
-        <meta name="keywords" content="Cyberspaceconsulting, the1andonii, IT">
-        <meta name="description" content="CyberSpaceConsulting.">
-        <meta name="author" content="The1AndOni">
-        <meta name="robots" content="index, unfollow"> <!--Hift Suchmaschinen auf der Startseite zu landen-->
-        <meta name="revisit-after" content="5 month"> <!--Läd die Seite neu in die Google Datenbank nach Zeitraum-->
+<head>
+    <!--Meta Daten für Suchmaschine-->
+    <meta charset="utf-16">
+    <meta name="keywords" content="Cyberspaceconsulting, the1andonii, IT, Cybersecurity">
+    <meta name="description" content="CyberSpaceConsulting.">
+    <meta name="author" content="The1AndOni">
+    <meta name="robots" content="index, unfollow"> <!--Hilft Suchmaschinen auf der Startseite zu landen-->
+    <meta name="revisit-after" content="5 month"> <!--Lädt die Seite neu in die Google Datenbank nach Zeitraum-->
 
-        <title>CyberSpaceConsulting</title>
-        
-        <!--Wichtig für die Config des Favicon-->
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-
-        <!--Wichtig für das Formatieren DER Website-->
-        <link rel="stylesheet" href="style.css">
+    <title>CyberSpaceConsulting</title>
     
-    </head>
-    <body>
-        
-        <!-- HTML Kommentar -->
-        <h1 class="ueberschrift">Startseite</h1>
+    <!--Wichtig für die Config des Favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Wichtig für das Formatieren DER Website-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="header flex flex-justify-space-between">
+        <div>
+            <a href="http://fun.the1andonii.de" class="logo">
+                <img src="logo.png" width="45px" alt="Logo"/>
+            </a>
+            <h1>CyberSpaceConsulting</h1>
+        </div>
+        <div class="header-right">
+            <a class="active" href="website.html">Home</a>
+            <a href="about_me.html">About</a>
+            <a href="https://www.youtube.com/@younggreed">YouTube</a>
+        </div>
+    </div>
+
+    <!-- HTML Kommentar -->
+    <div class="content">
         <hr>
         <div class="flexbox-center clearfix">
-            <img id="alexbild" src="Alexander.jpg" width=45% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
+            <img id="alexbild" src="Alexander.jpg" width="45%" alt="Hier ist ein Bild von Alexander" style="float: left;"/>
             <p class="text">
                 <span class="bold font-l" title="About Me">About me:</span>
                 <br><br>
@@ -37,51 +50,63 @@
                 <br>
                 Abseits davon bin ich auch sehr an YouTube und Gaming interessiert. Auf meinem Channel findet ihr daher oft Gaming-Inhalte.
                 <br><br>
-                Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich vorraussichtlich Mitte 2027 beenden werde.
+                Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich voraussichtlich Mitte 2027 beenden werde.
                 <br><br>
                 Mein Ziel ist es, Menschen über die Gefahren im Internet aufzuklären. Ich hoffe, das hierdurch besser erreichen zu können.
                 <br><br>
                 <b>Liebe Grüße Alexander</b>
             </p>    
         </div>
-        
-        
-        <hr>
-        <h3 class="text" title="Mein neustes Video" >Hier findet ihr mein Aktuellstes Video.</h3>
-        <p class="text">In diesem Video findet man die Truppe in einer ereignissreichen Runde Hunt:Showdown</p>
-        <!-- Youtube Embed-->
+    </div>
+
+    <!-- Parallax Abschnitt -->
+    <div class="parallax bg2"></div>
+
+    <hr>
+    <div class="content2">
+        <h2 class="text" title="Mein neustes Video">Hier findet ihr mein Aktuellstes Video.</h2>
+        <p class="text">In diesem Video findet man die Truppe in einer ereignisreichen Runde Hunt: Showdown</p>
+        <!-- Youtube Embed -->
         <div style="width: 90%; max-width: 600px;" class="align-center">
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wXhgALOzUSM?si=CpzrPTFZ12WNo38d" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <hr>
+    </div>
 
+    <hr>
+    <!-- Parallax Abschnitt -->
+    <div class="parallax bg3"></div>
+
+    <hr>
+    <div class="content2">
         <h3 class="text">Find me on:</h3>
-        <div class="tab" class="round-border">
+        <div class="tab round-border">
             <span class="tablinks" onclick="openCity(event, 'Discord')">Discord</span>
             <span class="tablinks" onclick="openCity(event, 'Instagram')">Instagram</span>
             <span class="tablinks" onclick="openCity(event, 'Github')">GitHub</span>
             <span class="tablinks" onclick="openCity(event, 'Twitch')">Twitch</span>
         </div>
-        
+    </div>
+
+    <div class="content2">
         <div class="align-center">
             <div id="Discord" class="tabcontent round-border">
-                <h3 class="text" title="My Community Discord"> <img src="discord_logo.png" class="inline-icon" />&nbsp;Community&nbsp;Discord&nbsp;<img src="discord_logo.png" class="inline-icon" /></h3>
-                <p class="text"> 
-                    Ihr sucht interessante gespräche oder einfach Leute zum gemütlichen beisammensein finden? 
+                <h3 class="text" title="My Community Discord"><img src="discord_logo.png" class="inline-icon" /> Community Discord <img src="discord_logo.png" class="inline-icon" /></h3>
+                <p class="text">
+                    Ihr sucht interessante Gespräche oder einfach Leute zum gemütlichen Beisammensein finden? 
                     <br>
                     Dann seid ihr <a href="http://invite.Cyberspaceconsulting.de">HIER</a> genau richtig
                 </p>
             </div>
             <div id="Instagram" class="tabcontent round-border">
-                <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
+                <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" /> Instagram <img src="instagram_logo.png" class="inline-icon" /></h3>
                 <p class="text">
                     Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.
                 </p>
             </div>
             <div id="Github" class="tabcontent round-border">
-                <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /></h3>
+                <h3 class="text" title="My Github Account"><img src="GitHub.png" class="inline-icon" /> GitHub Account <img src="GitHub.png" class="inline-icon" /></h3>
                 <p class="text">
                     Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
                     <br>
@@ -89,21 +114,26 @@
                 </p>
             </div>
             <div id="Twitch" class="tabcontent round-border">
-                <h3 class="text" title="My twitch Account"><img src="twitch_logo.png" class="inline-icon" />&nbsp;Twitch&nbsp;Account&nbsp;<img src="twitch_logo.png" class="inline-icon" /></h3>
+                <h3 class="text" title="My Twitch Account"><img src="twitch_logo.png" class="inline-icon" /> Twitch Account <img src="twitch_logo.png" class="inline-icon" /></h3>
                 <p class="text">
                     Hier kommt ihr zu meinen <a href="http://twitch.cyberspaceconsulting.de">Livestreams</a>.
                 </p>
             </div>
         </div>
-        
-        
-        <hr>
+    </div>
+
+    <hr>
+    <div class="content2">
         <div class="footer">
-			<a href="website.html" title="Startseite">Startseite</a> <a href="about_me.html" title="About Me">About Me</a> <a href="impressum.html" title="Impressum/Bildnachweis">Impressum</a> <h5>Made with &lt;3 by The1AndOni</h5>  
-		</div>
-       
-        <script>
-            function openCity(evt, cityName) {
+            <a href="website.html" title="Startseite">Startseite</a> 
+            <a href="about_me.html" title="About Me">About Me</a> 
+            <a href="impressum.html" title="Impressum/Bildnachweis">Impressum</a>
+            <h5>Made with &lt;3 by The1AndOni</h5>
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
 
@@ -122,7 +152,7 @@
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
-            } 
-        </script>
-	</body>
+        }
+    </script>
+</body>
 </html>
