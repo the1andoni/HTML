@@ -23,7 +23,7 @@ body {
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
   z-index: 1000;
   background: rgba(85, 85, 85, 0.9);
   display: flex;
@@ -310,7 +310,7 @@ display: flex;
   .parallax{
     background-image: none;
   }
-  
+
   html {
     background-image: url("img2.jpg");
   }
