@@ -306,4 +306,7 @@ display: flex;
   .flexbox-center img {
     width: 100%;
   }
+  .parallax {
+    position: fixed;
+  }
 }
