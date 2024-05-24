@@ -118,6 +118,11 @@ a, a:visited {
     justify-content: center;
   }
 
+.overflow-hidden {
+  overflow: hidden;
+  }
+
+
 .tab span, .tab_social span {
   background-color: rgba(221, 204, 170, 0.5);
   border: none;
