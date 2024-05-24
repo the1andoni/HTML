@@ -72,21 +72,56 @@
                 <p class="text"><a href="https://twitch.tv/the1andonii">Aktuell nur Spontan</a></p>
         </div>
         <div class="contentbox flexcontent">
-            <h3 class="text"><u>Favourite Games:</u></h3>
-            <p class="text"> - Dead by Daylight
-                <br><br>
-                - Rainbow Six Siege
-                <br><br>
-                - CS:GO
-                <br><br>
-                - Ghost of Tshushima
+                <h3 class="text"><u>Most Played Games:</u></h3>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'DBD')">Dead by Daylight</span>
+                    </div>
+                    <div id="DBD" class="tabcontent round-border">
+                        <iframe src="https://store.steampowered.com/widget/381210" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'RAINBOW')">Rainbow Six:Siege</span>
+                    </div>
+                    <div id="RAINBOW" class="tabcontent round-border">
+                        <iframe src="https://store.steampowered.com/widget/359550" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'CS2')">Counter Strike 2</span>
+                    </div> 
+                    <div id="CS2" class="tabcontent round-border">
+                        <iframe src="https://store.steampowered.com/widget/730" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'GOT')">Ghost of Tsushima</span>
+                    </div>
+                    <div id="GOT" class="tabcontent round-border">
+                        <iframe src="https://store.steampowered.com/widget/2215430" width="550" height="190" frameborder="0"></iframe>
+                    </div>
                 
+                    <script>
+                        function openGame(evt, gameName) {
+                        // Declare all variables
+                        var i, tabcontent, tablinks;
 
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
 
-            </p>
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
 
-        </div>
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(gameName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                        } 
 
+                    </script>
+                </div>
     </div>    
     
     <div class="contentbox">
@@ -161,16 +196,16 @@
     <!--Tabs Ertellen und darstellen-->  
     <div class="contentbox">
         <h3 class="text">Find me on:</h3>
-            <div class="tab" class="round-border">
-                <span class="tablinks" onclick="openCity(event, 'Discord')">Discord</span>
-                <span class="tablinks" onclick="openCity(event, 'Instagram')">Instagram</span>
-                <span class="tablinks" onclick="openCity(event, 'Github')">GitHub</span>
-                <span class="tablinks" onclick="openCity(event, 'Twitch')">Twitch</span>
-                <span class="tablinks" onclick="openCity(event, 'YouTube')">YouTube</span>
+            <div class="tab_social" class="round-border">
+                <span class="tablinks_social" onclick="openSocial(event, 'Discord')">Discord</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Instagram')">Instagram</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Github')">GitHub</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Twitch')">Twitch</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'YouTube')">YouTube</span>
             </div>
         
             <div class="align-center">
-                <div id="Discord" class="tabcontent round-border">
+                <div id="Discord" class="tabcontent_social round-border">
                     <h3 class="text" title="My Community Discord"> <img src="discord_logo.png" class="inline-icon" />&nbsp;Community&nbsp;Discord&nbsp;<img src="discord_logo.png" class="inline-icon" /></h3>
                     <p class="text"> 
                         Ihr sucht interessante gespräche oder einfach Leute zum gemütlichen beisammensein finden? 
@@ -178,13 +213,13 @@
                         Dann seid ihr <a href="http://invite.Cyberspaceconsulting.de">HIER</a> genau richtig
                     </p>
                 </div>
-                <div id="Instagram" class="tabcontent round-border">
+                <div id="Instagram" class="tabcontent_social round-border">
                     <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
                     <p class="text">
                         Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.
                     </p>
                 </div>
-                <div id="Github" class="tabcontent round-border">
+                <div id="Github" class="tabcontent_social round-border">
                     <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /></h3>
                     <p class="text">
                         Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
@@ -192,13 +227,13 @@
                         All meine Projekte findet ihr dort.
                     </p>
                 </div>
-                <div id="Twitch" class="tabcontent round-border">
+                <div id="Twitch" class="tabcontent_social round-border">
                     <h3 class="text" title="My twitch Account"><img src="twitch_logo.png" class="inline-icon" />&nbsp;Twitch&nbsp;Account&nbsp;<img src="twitch_logo.png" class="inline-icon" /></h3>
                     <p class="text">
                         Hier kommt ihr zu meinen <a href="http://twitch.cyberspaceconsulting.de">Livestreams</a>.
                     </p>
                 </div>
-                <div id="YouTube" class="tabcontent round-border">
+                <div id="YouTube" class="tabcontent_social round-border">
                     <h3 class="text" title="My Youtube"><img src="youtube_logo.svg" class="inline-icon" />&nbsp;YouTube&nbsp;<img src="youtube_logo.svg" class="inline-icon" /></h3>
                     <p class="text">
                         Hier findet ihr mich auf <a href="https://www.youtube.com/@younggreed">YouTube</a>.
@@ -206,6 +241,28 @@
                         Hier wird aktuell aber leider, aufgrund mangelnder Zeit, wahrscheinlich erstmal nichts kommen.
                     </p>
                 </div>
+                <script>
+                    function openSocial(evt, socialLink) {
+                    // Declare all variables
+                    var i, tabcontent1, tablinks1;
+        
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent1 = document.getElementsByClassName("tabcontent_social");
+                    for (i = 0; i < tabcontent1.length; i++) {
+                        tabcontent1[i].style.display = "none";
+                    }
+        
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks1 = document.getElementsByClassName("tablinks_social");
+                    for (i = 0; i < tablinks1.length; i++) {
+                        tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+                    }
+        
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(socialLink).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    } 
+                </script>
             </div>
         </div>
         
@@ -214,27 +271,6 @@
 			<a href="website.html" title="Startseite">Startseite</a> <a href="about_me.html">About</a> <a href="impressum.html" title="Impressum/Bildnachweis">Impressum</a>  <h5>Made with &lt;3 by The1AndOni</h5>
 		</div>
        
-        <script>
-            function openCity(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
 
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-            } 
-        </script>
 	</body>
 </html>
