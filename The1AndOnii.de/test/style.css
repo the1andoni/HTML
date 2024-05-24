@@ -1,0 +1,238 @@
+/* CSS Kommentar */
+html {
+  background-image: url("background.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  font-size: 12pt;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+h1 {font-size: 150%;}
+h2 {font-size: 140%;}
+h3 {font-size: 130%;}
+h4 {font-size: 120%;}
+h5 {font-size: 110%;}
+
+input {
+  border: 1px solid black;
+  margin-bottom: 3px;
+  padding: 1px 3px;
+  }
+
+a, a:visited {
+  color: inherit;
+  }
+
+#alexbild {
+  border-radius: 10px;
+  margin-right: 80px;
+  }
+
+/* Allgemeine Klassen */
+
+.text {
+  text-align:center;
+  margin-left: 1%;
+  margin-right: 1%;
+  }
+
+.hintergrund {
+  background-color: #9D0000;
+  padding: 1px 3px;
+  }
+
+.align-center {
+  margin: 0 auto 1vw auto;
+  display: block;
+  }
+
+.footer {
+  text-align: center;
+      
+  }
+
+.flex {display: flex;}
+
+.flex-gap {
+  gap: 10px;
+  }
+
+.flexcontent {
+  width: 100%;
+  min-width: 0;
+  }
+
+.flex-align-center {
+  align-items: center;
+  }
+
+.flex-justify-space-between {
+  justify-content: space-between;
+  }
+
+.bold {
+  font-weight: bold;
+  }
+
+.font-l {
+  font-size: 110%;
+  }
+
+.round-border {
+  border-radius: 10px;
+  }
+
+
+/* Ende allgemeine Klassen */
+
+/* Spezifische Klassen */
+.meineliste {
+    margin: 0 auto;
+    width: max-content;
+    }
+	
+.impressum {
+	text-align:left;
+	}
+  
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+.inline-icon {
+  vertical-align: middle;
+  height: 1.6rem;
+  }
+
+/* Ende der Spezifischen Klassen */
+
+/* Style the tab */
+.tab, .tab_social {
+    border-radius: 10px;
+    margin: 0 auto 1vw auto;
+	  display: flex;
+    justify-content: center;
+  }
+
+.overflow-hidden {
+  overflow: hidden;
+  }
+
+
+.tab span, .tab_social span {
+  background-color: rgba(221, 204, 170, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
+  }
+
+.tab span:hover, .tab_social span:hover {
+    background-color: #9D0000;
+  } 
+
+.tab span.active, .tab_social span.active {
+    background-image: linear-gradient(rgba(221, 204, 170, 0), rgb(221, 204, 170), rgba(221, 204, 170, 0));
+    color: black;
+  }
+
+.tabcontent, .tabcontent_social {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-radius: 10px;
+  }    
+
+/* End Tab Style */
+
+.contentbox {
+  border-radius: 10px;
+  overflow: hidden;
+  border-style:inherit;
+  background-color: rgba(43, 43, 46, 0.5);
+  padding: 1%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style the header */
+.header a {
+  float: left;
+  color: rgb(248, 167, 4);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  }
+  
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 1rem;
+  }
+  
+.header a:hover {
+  background-color: #ddd;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: darkred;
+    color: rgb(248, 167, 4);
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    height: max-content;
+    align-self: center;
+  }
+  
+/*Hidden Elements*/
+
+.hoverbox {
+  }
+
+.hidden {
+  height: 0;
+  transition: 1;
+  overflow: hidden;
+  font-weight: bolder;
+  color: lightgoldenrodyellow;
+  }
+
+.hoverbox:hover .hidden {
+  height: auto;
+  }
+
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 980px) {
+    html {
+      background-position: right;
+      }
+    
+    .hidden {
+      height: auto;
+      width: auto;
+      font-weight: 100%;
+      color: white;
+      }
+
+    .header a {
+      float: none;
+      display: block;
+      text-align: left; 
+    }
+  }
