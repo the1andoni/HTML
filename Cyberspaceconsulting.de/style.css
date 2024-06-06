@@ -129,19 +129,19 @@ display: block;
   }
 
 .bg1 {
-  background-image: url("img1.jpg");
+  background-image: url("img1.png");
   }
 
 .bg2 {
-  background-image: url("img2.jpg");
+  background-image: url("img2.png");
   }
 
 .bg3 {
-  background-image: url("img3.jpg");
+  background-image: url("img3.png");
   }
 
 .bg4 {
-  background-image: url("img4.jpg");
+  background-image: url("img4.png");
   }
 
 .parallax {
