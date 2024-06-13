@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Daten für Suchmaschine-->
+        <meta charset="utf-16">
+        <meta name="keywords" content="the1andonii, IT, Security, ITSecurity">
+        <meta name="description" content="Hi, ich bin Alex – leidenschaftlicher Gamer, White Head und (Hobby)-ContentCreator.">
+        <meta name="author" content="The1AndOni">
+        <meta name="robots" content="index, unfollow"> <!--Hift Suchmaschinen auf der Startseite zu landen-->
+        <meta name="revisit-after" content="5 month"> <!--Läd die Seite neu in die Google Datenbank nach Zeitraum-->
+
+        <title>The1AndOni - Home</title>
+        
+        <!--Wichtig für die Config des Favicon-->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+
+        <!--Wichtig für das Formatieren DER Website-->
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+
+    <div class="header contentbox flex flex-justify-space-between">
+        <div>
+            <a href="http://fun.the1andonii.de" class="logo"><img src="logo.png" width=45px/></a>
+            <h1 style="display: inline-block;">The1AndOni</h1>
+        </div>
+        <div class="header-right">
+          <a class="active" href="website.html">Home</a>
+          <a href="about_me.html"> About</a>
+          <a href="https://www.youtube.com/@younggreed">YouTube</a>
+        </div>
+    </div>
+
+    <div class="contentbox">
+        <div class="flex-align-center flex clearfix">
+            <img id="alexbild" src="steam_pb.png" width=20% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
+            <p class="text" width=100%>
+                <span class="bold font-l" title="About Me">About me:</span>
+                <br><br>
+                Hi, ich bin Alex – leidenschaftlicher Gamer, White Head und (Hobby)-ContentCreator.
+                <br><br>
+                Bei mir findest du eine bunte Mischung aus Indie-Perlen und AAA-Titeln, regelmäßige Livestreams und eine tolle Community. 
+                <br><br>
+                Schau doch mal vorbei und lass dich von meiner Begeisterung für Gaming anstecken!
+            </p>    
+        </div>
+    </div>  
+
+    <div class="flex-gap flex">
+        <div class="contentbox flexcontent">
+            <h3 class="text"><u>PC Speccs:</u></h3>
+            <p class="text">xGraphic Card : <a href="https://www.asus.com/de/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx4070-o12g-gaming/">ASUS Geforce RTX 4070 OC Edition</a>
+                <br><br>
+                xCPU : <a href="https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-9-5950x.html">AMD Ryzen 9 5959X 16x</a> 
+                <br><br>
+                xRam : <a href="https://www.corsair.com/de/de/p/memory/cmk32gx4m2e3200c16/vengeancea-lpx-32gb-2-x-16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16">Corsair Vengance DDR4 3200MHz [2x16GB]</a> 
+                <br><br>
+                xMainboard : <a href="https://rog.asus.com/de/motherboards/rog-strix/rog-strix-b550-f-gaming-wifi-ii-model/">Asus ROG Strix B550-f Gaming Wifi II</a>
+                <br><br>
+                xPower Supply : <a href="https://www.bequiet.com/de/powersupply/4413">beQuiet! DarkPro 13 1300 Watt</a> 
+                <br><br>
+                xCase : <a href="https://www.fractal-design.com/de/products/cases/north/north-xl/charcoal-black-tg-dark/">Fractal North Xl</a>
+            </p>
+        </div>
+        <div class="contentbox flexcontent">
+            <h3 class="text"><u>Content Plan</u></h3>
+            <h4 class="text">Youtube Videos:</h4>
+                <p class="text">Aktuell nicht geplant. Aber <a href="https://youtu.be/wXhgALOzUSM?feature=shared">HIER</a> kommst du zum Letzten Video.</p>
+                <h3 class="text">Twitch Stream:</h3>
+                <p class="text"><a href="https://twitch.tv/the1andonii">07.06.24 20Uhr</a>
+                <br>
+                08.06.24 14Uhr
+                <br>
+                09.06.24 16Uhr
+                </p>
+        </div>
+        <div class="contentbox flexcontent">
+                <h3 class="text"><u>Most Played Games:</u></h3>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'DBD')">Dead by Daylight</span>
+                    </div>
+                    <div id="DBD" class="tabcontent round-border">
+                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/381210" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'RAINBOW')">Rainbow Six:Siege</span>
+                    </div>
+                    <div id="RAINBOW" class="tabcontent round-border">
+                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/359550" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'CS2')">Counter Strike 2</span>
+                    </div> 
+                    <div id="CS2" class="tabcontent round-border">
+                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/730" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                    <div class="tab" class="round-border">
+                        <span class="tablinks" onclick="openGame(event, 'GOT')">Ghost of Tsushima</span>
+                    </div>
+                    <div id="GOT" class="tabcontent round-border">
+                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/2215430" width="550" height="190" frameborder="0"></iframe>
+                    </div>
+                
+                    <script>
+                        function openGame(evt, gameName) {
+                        // Declare all variables
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the button that opened the tab
+                        document.getElementById(gameName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                        } 
+
+                    </script>
+                </div>
+    </div>    
+    
+    <div class="contentbox">
+        <h3 class="text"><u>Empfohlene ContentCreator:</u></h3>
+        <div class="flex flex-gap flex-justify-space-between">
+            <div class="hoverbox">
+            <h3 class="text">Vax3ro</h3>
+                <div class="hidden">
+                    <p class="text"> Diverse Games</p>
+                    <p class="text"><a href="https://twitch.tv/vax3ro">Twitch</a></p>
+                </div>
+            </div>
+            
+            <div class="hoverbox">
+            <h3 class="text">Rufus</h3>
+                <div class="hidden">
+                    <p class="text">Diverse Games</p>
+                    <p class="text"><a href="https://twitch.tv/rufus9774">Twitch</a></p>
+                    <p class="text"><a href="https://www.youtube.com/@rufus9774">YouTube</a></p>
+                </div>
+            </div>
+            
+            <div class="hoverbox">
+            <h3 class="text">Meowing_Saki</h3>
+                <div class="hidden">    
+                    <p class="text"> Dead by Daylight, Sims3</p>
+                    <p class="text"><a href="https://twitch.tv/Meowing_Saki">Twitch</a></p>
+                </div>
+            </div>
+            
+            <div class="hoverbox">
+            <h4 class="text">greecerussian</h4>
+                <div class="hidden">
+                    <p class="text">FIFA, Just Chatting, ASMR</p>
+                    <p class="text"><a href="https://twitch.tv/greecerussian">Twitch</a></p>
+                    <p class="text"><a href="https://www.youtube.com/@greecerussian">YouTube</a></p>
+                </div>
+            </div>
+
+            <div class="hoverbox">
+            <h4 class="text">Lead Nomad</h4>
+                <div class="hidden">    
+                    <h4 class="text">Rainbow Six:Siege</h4>
+                    <p class="text"><a href="https://twitch.tv/leadnomad">Twitch</a></p>
+                    <p class="text"><a href="https://www.youtube.com/channel/UC8xV1yJZPfp4M0rTZFSZ4YQ">YouTube</a></p>
+                </div>
+            </div>
+
+            <div class="hoverbox">
+            <h4 class="text">Ryuzaki</h4>
+                <div class="hidden">
+                    <p class="text">Overwatch 2, GTA 5</p>
+                    <p class="text"><a href="https://twitch.tv/secondryuzaki">Twitch</a></p>
+                    <p class="text"><a href="https://www.youtube.com/@SecondRyuzaki">YouTube</a></p>
+                </div>
+            </div>
+
+            <div class="hoverbox">
+            <h4 class="text">Schmupai</a>
+                <br>
+                (Also known as Croxxu)</h4>
+                <div class="hidden">
+                    <p class="text">CS:GO 2, Overwatch</p>
+                    <p class="text"><a href="https://twitch.tv/schmupai">Twitch</a></p>
+                    <p class="text"><a href="https://www.youtube.com/@Schmupai">YouTube</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Tabs Ertellen und darstellen-->  
+    <div class="contentbox">
+        <h3 class="text">Find me on:</h3>
+            <div class="tab_social" class="round-border">
+                <span class="tablinks_social" onclick="openSocial(event, 'Discord')">Discord</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Instagram')">Instagram</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Github')">GitHub</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'Twitch')">Twitch</span>
+                <span class="tablinks_social" onclick="openSocial(event, 'YouTube')">YouTube</span>
+            </div>
+        
+            <div class="align-center">
+                <div id="Discord" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Community Discord"> <img src="discord_logo.png" class="inline-icon" />&nbsp;Community&nbsp;Discord&nbsp;<img src="discord_logo.png" class="inline-icon" /></h3>
+                    <p class="text"> 
+                        Ihr sucht interessante gespräche oder einfach Leute zum gemütlichen beisammensein finden? 
+                        <br>
+                        Dann seid ihr <a href="http://invite.Cyberspaceconsulting.de">HIER</a> genau richtig
+                    </p>
+                </div>
+                <div id="Instagram" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Instagram"><img src="instagram_logo.png" class="inline-icon" />&nbsp;Instagram&nbsp;<img src="instagram_logo.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Bilder von mir findet ihr auf <a href="http://instagram.Cyberspaceconsulting.de">Instagram</a>.
+                    </p>
+                </div>
+                <div id="Github" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Github Account"> <img src="GitHub.png" class="inline-icon" />&nbsp;Github&nbsp;Account&nbsp;<img src="GitHub.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier findet ihr mein <a href="https://github.com/the1andoni">Github</a> Account.
+                        <br>
+                        All meine Projekte findet ihr dort.
+                    </p>
+                </div>
+                <div id="Twitch" class="tabcontent_social round-border">
+                    <h3 class="text" title="My twitch Account"><img src="twitch_logo.png" class="inline-icon" />&nbsp;Twitch&nbsp;Account&nbsp;<img src="twitch_logo.png" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier kommt ihr zu meinen <a href="http://twitch.cyberspaceconsulting.de">Livestreams</a>.
+                    </p>
+                </div>
+                <div id="YouTube" class="tabcontent_social round-border">
+                    <h3 class="text" title="My Youtube"><img src="youtube_logo.svg" class="inline-icon" />&nbsp;YouTube&nbsp;<img src="youtube_logo.svg" class="inline-icon" /></h3>
+                    <p class="text">
+                        Hier findet ihr mich auf <a href="https://www.youtube.com/@younggreed">YouTube</a>.
+                        <br>
+                        Hier wird aktuell aber leider, aufgrund mangelnder Zeit, wahrscheinlich erstmal nichts kommen.
+                    </p>
+                </div>
+                <script>
+                    function openSocial(evt, socialLink) {
+                    // Declare all variables
+                    var i, tabcontent1, tablinks1;
+        
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent1 = document.getElementsByClassName("tabcontent_social");
+                    for (i = 0; i < tabcontent1.length; i++) {
+                        tabcontent1[i].style.display = "none";
+                    }
+        
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks1 = document.getElementsByClassName("tablinks_social");
+                    for (i = 0; i < tablinks1.length; i++) {
+                        tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+                    }
+        
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(socialLink).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    } 
+                </script>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="footer text">
+			<a href="website.html" title="Startseite">Startseite</a> <a href="about_me.html">About</a> <a href="impressum.html" title="Impressum/Bildnachweis">Impressum</a>  <h5>Made with &lt;3 by The1AndOni</h5>
+		</div>
+       
+
+	</body>
+</html>
