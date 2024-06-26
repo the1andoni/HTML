@@ -3,11 +3,8 @@
     <head>
         <!--Meta Daten für Suchmaschine-->
         <meta charset="utf-16">
-        <meta name="keywords" content="the1andonii, IT, Security, ITSecurity">
-        <meta name="description" content="Hi, ich bin Alex – leidenschaftlicher Gamer, White Head und (Hobby)-ContentCreator.">
-        <meta name="author" content="The1AndOni">
-        <meta name="robots" content="index, unfollow"> <!--Hift Suchmaschinen auf der Startseite zu landen-->
-        <meta name="revisit-after" content="5 month"> <!--Läd die Seite neu in die Google Datenbank nach Zeitraum-->
+        <meta name="robots" content="noindex"> <!--Hift Suchmaschinen auf der Startseite zu landen-->
+       
 
         <title>Löschke - Home</title>
         
@@ -23,7 +20,7 @@
 
     <div class="header contentbox flex flex-justify-space-between">
         <div>
-            <a href="http://fun.the1andonii.de" class="logo"><img src="logo.png" width=45px/></a>
+            <a href="http://fun.the1andonii.de" class="logo" target="_blank"><img src="logo.png" width=45px/></a>
             <h1 style="display: inline-block;">Alexander Löschke</h1>
         </div>
         <div class="header-right">
@@ -35,15 +32,22 @@
     <div class="contentbox">
         <div class="flex-align-center flex clearfix">
             <img id="alexbild" src="steam_pb.png" width=20% alt="Hier ist ein Bild von Alexander" style="float: left;"/>
-            <p class="text" width=100%>
+            <p class="text">
                 <span class="bold font-l" title="About Me">About me:</span>
                 <br><br>
-                Hi, ich bin Alex – leidenschaftlicher Gamer, White Head und (Hobby)-ContentCreator.
+                Hallo, 
+                <br>
+                ich bin Alexander und 22 Jahre alt.
+                <br>
+                Leidenschaftlich interessiere ich mich für IT, insbesondere Cybersecurity. 
+                <br>
+                Abseits davon bin ich auch sehr an YouTube und Gaming interessiert. Auf meinem Channel findet ihr daher oft Gaming-Inhalte.
                 <br><br>
-                Bei mir findest du eine bunte Mischung aus Indie-Perlen und AAA-Titeln, regelmäßige Livestreams und eine tolle Community. 
+                Aktuell befinde ich mich in einer Ausbildung zum IT-Systemkaufmann, welche ich voraussichtlich Mitte 2027 beenden werde.
                 <br><br>
-                Schau doch mal vorbei und lass dich von meiner Begeisterung für Gaming anstecken!
-            </p>    
+                Mein Ziel ist es, Menschen über die Gefahren im Internet aufzuklären. Ich hoffe, das hierdurch besser erreichen zu können.
+                <br><br>
+                <b>Liebe Grüße Alexander</b>   
         </div>
     </div>  
 
@@ -71,32 +75,32 @@
                 <p class="text"><a href="https://twitch.tv/the1andonii">Aktuell nichts Geplant</a></p>
         </div>
         <div class="contentbox flexcontent">
-                <h3 class="text"><u>Most Played Games:</u></h3>
+                <h3 class="text"><u>Meine Bisherigen Projekte:</u></h3>
                     <div class="tab" class="round-border">
-                        <span class="tablinks" onclick="openGame(event, 'DBD')">Dead by Daylight</span>
+                        <span class="tablinks" onclick="openGame(event, 'DBD')">Discord Bot (Pyhton)</span>
                     </div>
                     <div id="DBD" class="tabcontent round-border">
-                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/381210" width="550" height="190" frameborder="0"></iframe>
+                        <p class="text">In diesem Projekt habe ich in knapp 5 Wochen einen Discord Bot programmiert, welcher die Moderation und Organisation meines Discord Servers übernimmt.</p>
                     </div>
                     <div class="tab" class="round-border">
-                        <span class="tablinks" onclick="openGame(event, 'RAINBOW')">Rainbow Six:Siege</span>
+                        <span class="tablinks" onclick="openGame(event, 'RAINBOW')">Websites (HTML, CSS, JavaScript)</span>
                     </div>
                     <div id="RAINBOW" class="tabcontent round-border">
-                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/359550" width="550" height="190" frameborder="0"></iframe>
+                        <p class="text">In diesem Projekt(Dauer ca. 2 Wochen) habe ich gelernt mithilfe von HTML, CSS und JavaScript eine Website aufzubauen.</p>
                     </div>
                     <div class="tab" class="round-border">
-                        <span class="tablinks" onclick="openGame(event, 'CS2')">Counter Strike 2</span>
+                        <span class="tablinks" onclick="openGame(event, 'CS2')">Cybersecurity / Ethikal Hacking (Kali Linux)</span>
                     </div> 
                     <div id="CS2" class="tabcontent round-border">
-                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/730" width="550" height="190" frameborder="0"></iframe>
+                        <p class="text">Seit einigen Jahren widme ich mich intensiv dem Bereich Ethical Hacking und Cybersecurity. 
+                            <br>
+                            Neben meiner Ausbildung bereite ich mich auf verschiedene Zertifizierungen vor und eigne mir kontinuierlich neues Wissen in diesen Bereichen an. 
+                            <br> 
+                            Durch selbstständiges Lernen und praxisorientiertes Training habe ich ein solides Verständnis für Sicherheitslücken und Schutzmaßnahmen entwickelt. 
+                            <br>
+                            Diese Kenntnisse nutze ich, um meine Fähigkeiten im Erkennen und Beheben von Sicherheitsproblemen stetig zu verbessern.</p>
                     </div>
-                    <div class="tab" class="round-border">
-                        <span class="tablinks" onclick="openGame(event, 'GOT')">Ghost of Tsushima</span>
-                    </div>
-                    <div id="GOT" class="tabcontent round-border">
-                        <iframe class="overflow-hidden round-border" src="https://store.steampowered.com/widget/2215430" width="550" height="190" frameborder="0"></iframe>
-                    </div>
-                
+
                     <script>
                         function openGame(evt, gameName) {
                         // Declare all variables
@@ -124,77 +128,46 @@
     </div>    
     
     <div class="contentbox">
-        <h3 class="text"><u>Empfohlene ContentCreator:</u></h3>
-        <div class="flex flex-gap flex-justify-space-between">
-            <div class="hoverbox">
-            <h3 class="text">Vax3ro</h3>
-                <div class="hidden">
-                    <p class="text"> Diverse Games</p>
-                    <p class="text"><a href="https://twitch.tv/vax3ro">Twitch</a></p>
-                </div>
-            </div>
-            
-            <div class="hoverbox">
-            <h3 class="text">Rufus</h3>
-                <div class="hidden">
-                    <p class="text">Diverse Games</p>
-                    <p class="text"><a href="https://twitch.tv/rufus9774">Twitch</a></p>
-                    <p class="text"><a href="https://www.youtube.com/@rufus9774">YouTube</a></p>
-                </div>
-            </div>
-            
-            <div class="hoverbox">
-            <h3 class="text">Meowing_Saki</h3>
-                <div class="hidden">    
-                    <p class="text"> Dead by Daylight, Sims3</p>
-                    <p class="text"><a href="https://twitch.tv/Meowing_Saki">Twitch</a></p>
-                </div>
-            </div>
-            
-            <div class="hoverbox">
-            <h4 class="text">greecerussian</h4>
-                <div class="hidden">
-                    <p class="text">FIFA, Just Chatting, ASMR</p>
-                    <p class="text"><a href="https://twitch.tv/greecerussian">Twitch</a></p>
-                    <p class="text"><a href="https://www.youtube.com/@greecerussian">YouTube</a></p>
-                </div>
-            </div>
-
-            <div class="hoverbox">
-            <h4 class="text">Lead Nomad</h4>
-                <div class="hidden">    
-                    <h4 class="text">Rainbow Six:Siege</h4>
-                    <p class="text"><a href="https://twitch.tv/leadnomad">Twitch</a></p>
-                    <p class="text"><a href="https://www.youtube.com/channel/UC8xV1yJZPfp4M0rTZFSZ4YQ">YouTube</a></p>
-                </div>
-            </div>
-
-            <div class="hoverbox">
-            <h4 class="text">Ryuzaki</h4>
-                <div class="hidden">
-                    <p class="text">Overwatch 2, GTA 5</p>
-                    <p class="text"><a href="https://twitch.tv/secondryuzaki">Twitch</a></p>
-                    <p class="text"><a href="https://www.youtube.com/@SecondRyuzaki">YouTube</a></p>
-                </div>
-            </div>
-
-            <div class="hoverbox">
-            <h4 class="text">Schmupai</a>
-                <br>
-                (Also known as Croxxu)</h4>
-                <div class="hidden">
-                    <p class="text">CS:GO 2, Overwatch</p>
-                    <p class="text"><a href="https://twitch.tv/schmupai">Twitch</a></p>
-                    <p class="text"><a href="https://www.youtube.com/@Schmupai">YouTube</a></p>
-                </div>
-            </div>
-        </div>
+        <h1 class="text">About Me</h1>
+            <hr>
+                <p class="text">
+                    <br><br>
+                    Hallo, ich bin Alexander und 22 Jahre alt.
+                    <br><br>
+                    Schon im Alter von 12 Jahren begann meine Leidenschaft für Videospiele. Dadurch kam ich zwangsläufig immer mehr mit Computern in Berührung. 
+                    <br><br>
+                    Mit 18 Jahren begann mein Interesse für die IT stark zu steigen. 
+                    <br>
+                    Ich wollte wissen, wie genau alles funktioniert, und so begann ich, verschiedene Dinge auszuprobieren.
+                    <br>
+                    Mit 20 Jahren fand ich schließlich meine Faszination für Hacking und Cybersecurity. 
+                    <br><br>
+                    Dieser Bereich weckte in mir einen besonderen Fokus und ich begann, mich intensiv damit auseinanderzusetzen. 
+                    <br>
+                    Gleichzeitig begann ich auch mit dem Programmieren in Python. 
+                    <br>
+                    In dieser Zeit habe ich unter anderem einen Discord-Bot und einen Spoofer entwickelt. 
+                    <br>
+                    Diese Projekte haben mein Verständnis für Programmierung und Cybersecurity erheblich vertieft.
+                    <br><br>
+                    In meinem näheren Bekannten- und Freundeskreis bemerkte ich jedoch, dass die Sicherheit von Daten im Internet für viele Menschen keine große Rolle spielt.
+                    <br><br>
+                    Dies motivierte mich, mehr Bewusstsein für die Wichtigkeit von Cybersicherheit zu schaffen.
+                    <br>
+                    Nach langer Suche nach der richtigen Ausbildung begann ich im Mai 2024 meine Ausbildung zum Kaufmann für IT-Systemmanagement.
+                    <br><br>
+                    Mein Ziel ist es, den Menschen ein besseres Verständnis für das Internet zu vermitteln und sie über die Gefahren im digitalen Raum aufzuklären.
+                    
+                    <br><br>
+                    <b>Liebe Grüße Alexander</b>
+                </p>
+            <hr>
     </div>
     
     
     <!--Tabs Ertellen und darstellen-->  
     <div class="contentbox">
-        <h3 class="text">Find me on:</h3>
+        <h3 class="text">Meine Links:</h3>
             <div class="tab_social" class="round-border">
                 <span class="tablinks_social" onclick="openSocial(event, 'Discord')">Discord</span>
                 <span class="tablinks_social" onclick="openSocial(event, 'Instagram')">Instagram</span>
